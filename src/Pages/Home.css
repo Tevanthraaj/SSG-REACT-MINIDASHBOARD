@@ -1,0 +1,71 @@
+/* Base page style */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Light mode */
+.home-container.light {
+  background: linear-gradient(135deg, #c1a7d2, #9d7cb8);
+  color: #222;
+}
+
+/* Dark mode */
+.home-container.dark {
+  background: linear-gradient(135deg, #1b1b1b, #3a3a3a);
+  color: #f2f2f2;
+}
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header (top-right theme toggle) */
+.home-header {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* Theme button */
+.theme-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8a46c3;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: #7a3eb1;
+}
+
+/* Action buttons */
+.home-buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8a46c3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.home-buttons button:hover {
+  background-color: #7a3eb1;
+}
+
+.home-buttons button:active {
+  transform: scale(0.98);
+}

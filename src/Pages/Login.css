@@ -1,0 +1,108 @@
+/* Base page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Light theme background */
+.login-page.light {
+  background: linear-gradient(135deg, #c1a7d2, #9d7cb8);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+
+/* Dark theme background */
+.login-page.dark {
+  background: linear-gradient(135deg, #1b1b1b, #3a3a3a);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+}
+
+/* Login form container */
+.login-form {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.login-page.dark .login-form {
+  background: #2b2b2b;
+  color: #f2f2f2;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #a471c2;
+}
+
+/* Buttons */
+button {
+  background-color: #8a46c3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #7a3eb1;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Theme toggle button */
+.theme-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: auto;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #8a46c3;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: #7a3eb1;
+}
