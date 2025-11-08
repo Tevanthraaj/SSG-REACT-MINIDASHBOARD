@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://Tevanthraaj.github.io/SSG-REACT-MINIDASHBOARD",
+    "homepage": "https://github.com/Tevanthraaj/SSG-REACT-MINIDASHBOARD.git",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
