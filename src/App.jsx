@@ -6,7 +6,7 @@ import Dashboard from './Pages/Dashboard';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/SSG-REACT-MINIDASHBOARD/'>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
